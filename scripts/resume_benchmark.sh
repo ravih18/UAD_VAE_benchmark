@@ -3,7 +3,7 @@
 #MODEL_LIST=(BetaTCVAE VAE_IAF RAE_GP HVAE DisentangledBetaVAE FactorVAE WAE_MMD SVAE IWAE)
 MODEL=IWAE
 
-RS_DIR=./random_search/random_search_${MODEL}
+RS_DIR=./random_search_benchmark/random_search_${MODEL}
 
 for file in ${RS_DIR}/logs/*; do
     echo $file

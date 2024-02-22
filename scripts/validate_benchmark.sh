@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ROOT_DIR=./random_search
+ROOT_DIR=./random_search_benchmark
 
 MODELS=(Adversarial_AE BetaTCVAE BetaVAE DisentangledBetaVAE FactorVAE HVAE MSSSIM_VAE IWAE INFOVAE_MMD RAE_L2 RAE_GP SVAE VAEGAN VAE_IAF VAE_LinNF VAMP VQVAE WAE_MMD)
 for MODEL in ${MODELS[@]} ; do

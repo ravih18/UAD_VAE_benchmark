@@ -8,7 +8,7 @@
 
 echo $1
 
-ROOT_DIR=./random_search
+ROOT_DIR=./random_search_benchmark
 RS_DIR=${ROOT_DIR}/random_search_${1}
 
 export 'PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:64'
