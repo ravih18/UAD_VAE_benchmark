@@ -8,7 +8,7 @@ plt.rcParams["figure.autolayout"] = True
 
 # %%
 
-results_dir = "/gpfswork/rech/krk/commun/anomdetect/journal_benchmark/results"
+results_dir = "./results"
 df = pd.read_csv(
     f"{results_dir}/eval_prediction.tsv",
     delimiter="\t",

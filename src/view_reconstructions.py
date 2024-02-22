@@ -63,16 +63,16 @@ ses = "ses-M48"
 input_file_name = f"{sub}_{ses}_image-0_input.pt"
 output_file_name = f"{sub}_{ses}_image-0_output.pt"
 
-models_dir = "/gpfswork/rech/krk/commun/anomdetect/journal_benchmark/maps/"
+models_dir = "./maps/"
 model_list = {"Input": "Input", "empty": " "}
 with open(
-    "/gpfswork/rech/krk/commun/anomdetect/journal_benchmark/models.txt", "r"
+    "./models.txt", "r"
 ) as f:
     for line in f.readlines():
         line = line.strip("\n")
         model_list[line] = line
 with open(
-    "/gpfswork/rech/krk/commun/anomdetect/journal_benchmark/models_0.txt", "r"
+    "./models_0.txt", "r"
 ) as f:
     for line in f.readlines():
         line = line.strip("\n")
@@ -267,7 +267,7 @@ cbar2 = plt.colorbar(
 cbar2.ax.tick_params(labelsize=20)
 
 plt.savefig(
-    f"/gpfswork/rech/krk/commun/anomdetect/journal_benchmark/plots/reconstruction_plot_{sub}.png",
+    f"./plots/reconstruction_plot_{sub}.png",
     bbox_inches="tight",
     pad_inches=0,
 )

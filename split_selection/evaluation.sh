@@ -8,7 +8,7 @@
 
 echo Model $1 split $2
 
-MAPS_DIR=/gpfswork/rech/krk/commun/anomdetect/journal_benchmark/final_models/maps/MAPS_${1}
+MAPS_DIR=./final_models/maps/MAPS_${1}
 echo $MAPS_DIR
 
 # # Predict on test AD

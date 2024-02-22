@@ -9,7 +9,7 @@
 
 echo $1
 
-ROOT_DIR=/gpfswork/rech/krk/commun/anomdetect/journal_benchmark/final_models
+ROOT_DIR=./final_models
 CAPS_DIR=/gpfswork/rech/krk/commun/datasets/adni/caps/caps_pet_uniform
 MAPS_DIR=${ROOT_DIR}/${1}/MAPS_${1}_${SLURM_ARRAY_TASK_ID}
 PREPROCESSING_JSON=${CAPS_DIR}/tensor_extraction/extract_pet_uniform_image.json

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-RS_DIR=/gpfswork/rech/krk/commun/anomdetect/journal_benchmark/random_search/random_search_${1}
+RS_DIR=./random_search/random_search_${1}
 
 for MAPS_RESUME in $(find ${RS_DIR}/maps -name "*_resume" -type d); do
     echo $MAPS_RESUME

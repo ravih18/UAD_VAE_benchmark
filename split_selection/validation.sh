@@ -9,7 +9,7 @@
 
 echo $1
 
-ROOT_DIR=/gpfswork/rech/krk/commun/anomdetect/journal_benchmark/final_models
+ROOT_DIR=./final_models
 MAPS_DIR=${ROOT_DIR}/maps/MAPS_${1}
 mv ${ROOT_DIR}/${1}/MAPS_${1}_0 $MAPS_DIR
 
