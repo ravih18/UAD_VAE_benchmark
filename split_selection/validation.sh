@@ -5,9 +5,6 @@
 #SBATCH --ntasks=1
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=10
-#SBATCH --hint=nomultithread
-#SBATCH --account=krk@v100
-#SBATCH --qos=qos_gpu-dev
 #SBATCH --time=01:30:00
 
 echo $1

@@ -4,10 +4,7 @@
 #SBATCH --ntasks=1
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=10
-#SBATCH --qos=qos_gpu-dev
 #SBATCH --time=00:30:00
-#SBATCH --hint=nomultithread
-#SBATCH --account=krk@v100
 
 echo Model $1 split $2
 
