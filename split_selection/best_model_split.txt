@@ -1,0 +1,17 @@
+Adversarial_AE 2
+AE 3
+BetaTCVAE 3
+BetaVAE 2
+DisentangledBetaVAE 2
+FactorVAE 2
+HVAE 4
+INFOVAE_MMD 4
+IWAE 4
+RAE_L2 3
+RAE_GP 2
+VAE 2
+VAEGAN 3
+VAE_IAF 2
+VAE_LinNF 1
+VQVAE 3
+WAE_MMD 3

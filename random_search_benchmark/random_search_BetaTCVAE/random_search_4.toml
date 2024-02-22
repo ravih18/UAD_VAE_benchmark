@@ -1,0 +1,37 @@
+[Model]
+architecture = "pythae_BetaTCVAE"
+
+[Architecture]
+first_layer_channels = 16
+last_layer_channels = 16
+n_block_encoder = 5
+n_block_decoder = 5
+n_layer_per_block_encoder = 1
+n_layer_per_block_decoder = 1
+feature_size = 0
+latent_space_size = 256
+last_layer_conv = false
+
+[Computational]
+gpu = true
+n_proc = 10
+batch_size = 8
+
+[Data]
+diagnoses = ["CN"]
+
+[Optimization]
+epochs = 200
+learning_rate = 1e-4
+
+[Cross_validation]
+n_splits = 6
+
+[Random_Search]
+network_task = "reconstruction"
+caps_directory = "/gpfswork/rech/krk/commun/datasets/adni/caps/caps_pet_uniform/"
+tsv_path = "/gpfswork/rech/krk/usy14zi/vae_benchmark/random_search_vae/tsv_splits/6_fold"
+preprocessing_json = "extract_pet_uniform_image.json"
+beta = [0.05]
+alpha = [1]
+gamma = [1]

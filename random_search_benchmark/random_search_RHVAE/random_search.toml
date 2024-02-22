@@ -1,0 +1,40 @@
+[Model]
+architecture = "pythae_RHVAE"
+
+[Architecture]
+first_layer_channels = 16
+last_layer_channels = 16
+n_block_encoder = 5
+n_block_decoder = 5
+n_layer_per_block_encoder = 1
+n_layer_per_block_decoder = 1
+feature_size = 0
+latent_space_size = 256
+last_layer_conv = false
+
+[Computational]
+gpu = true
+n_proc = 10
+batch_size = 6
+
+[Data]
+diagnoses = ["CN"]
+
+[Optimization]
+epochs = 200
+learning_rate = 1e-4
+optimizer = "Adam"
+
+[Cross_validation]
+n_splits = 6
+
+[Random_Search]
+network_task = "reconstruction"
+caps_directory = "/gpfswork/rech/krk/commun/datasets/adni/caps/caps_pet_uniform/"
+tsv_path = "/gpfswork/rech/krk/usy14zi/vae_benchmark/random_search_vae/tsv_splits/6_fold"
+preprocessing_json = "extract_pet_uniform_image.json"
+n_lf = [1, 2, 10, 15, 20]
+eps_lf = [1e-5, 1e-4, 1e-3, 1e-2]
+beta_zero = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+temperature = [0.5, 0.8, 1.0, 1.5, 2.0]
+regularization = [1e-5, 1e-4, 1e-3, 1e-2]

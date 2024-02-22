@@ -1,0 +1,30 @@
+[Model]
+architecture = "pythae_AE"
+
+[Architecture]
+first_layer_channels = 16
+last_layer_channels = 16
+n_block_encoder = 5
+n_block_decoder = 5
+n_layer_per_block_encoder = 1
+n_layer_per_block_decoder = 1
+feature_size = 0
+latent_space_size = 256
+last_layer_conv = false
+
+[Pythae]
+
+[Computational]
+gpu = true
+n_proc = 10
+batch_size = 8
+
+[Cross_validation]
+n_splits = 6
+
+[Data]
+diagnoses = ["CN"]
+
+[Optimization]
+epochs = 200
+learning_rate = 1e-4
